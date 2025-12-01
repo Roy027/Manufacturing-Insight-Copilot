@@ -1,7 +1,7 @@
 # Manufacturing Insight Copilot (Streamlit + Gemini)
 
 A fully Python workflow that profiles manufacturing datasets locally with pandas/scipy, highlights issues through interactive dashboards, and orchestrates Google Gemini agents to produce insights, knowledge grounding, and structured reports.
-
+![Architecture Diagram](image/MindGraph.png)
 ## Key Capabilities
 - **Secure local profiling** – schema detection, numeric/categorical statistics, correlations, anomaly counts, and time-trend heuristics are computed offline in `tools/data_analysis.py`. Raw data is never sent to Gemini; only curated summaries and five sample rows are shared.
 - **Interactive visual analytics** – Streamlit UI offers dedicated tabs for schema review, distributions, correlations, time-series trends, anomaly exploration, batch/equipment variation, yield & quality metrics, PCA dimensionality reduction, and an at-a-glance summary dashboard.
